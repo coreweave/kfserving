@@ -60,9 +60,9 @@ var (
 // Controller Constants
 var (
 	ControllerLabelName             = KFServingName + "-controller-manager"
-	DefaultPredictorTimeout   int64 = 60
-	DefaultTransformerTimeout int64 = 120
-	DefaultExplainerTimeout   int64 = 300
+	DefaultPredictorTimeout   int64 = 11
+	DefaultTransformerTimeout int64 = 11
+	DefaultExplainerTimeout   int64 = 11
 	DefaultScalingTarget            = "1"
 	DefaultMinReplicas              = 1
 )
