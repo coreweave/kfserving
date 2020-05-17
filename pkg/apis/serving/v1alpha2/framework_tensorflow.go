@@ -48,6 +48,8 @@ func (t *TensorflowSpec) GetContainer(modelName string, parallelism int, config 
 		"--rest_api_port=" + TensorflowServingRestPort,
 		"--model_name=" + modelName,
 		"--model_base_path=" + constants.DefaultModelLocalMountPath,
+		"--per_process_gpu_memory_fraction=0.967",
+		"--flush_filesystem_caches=false",
 	}
 
 	return &v1.Container{
