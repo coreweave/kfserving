@@ -16,6 +16,7 @@ package v1alpha2
 import (
 	"fmt"
 	"strings"
+	"os"
 
 	"github.com/kubeflow/kfserving/pkg/constants"
 	"github.com/kubeflow/kfserving/pkg/utils"
@@ -48,7 +49,7 @@ func (t *TensorflowSpec) GetContainer(modelName string, parallelism int, config 
 		"--rest_api_port=" + TensorflowServingRestPort,
 		"--model_name=" + modelName,
 		"--model_base_path=" + constants.DefaultModelLocalMountPath,
-		"--per_process_gpu_memory_fraction=0.967",
+		os.Getenv("TF_SERVING_EXTRA_ARG"),
 		"--flush_filesystem_caches=false",
 	}
 
