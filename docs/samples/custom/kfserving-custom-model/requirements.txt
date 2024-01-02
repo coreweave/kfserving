@@ -49,7 +49,7 @@ parso==0.6.2
 pexpect==4.8.0
 pickleshare==0.7.5
 prometheus-client==0.7.1
-prompt-toolkit==3.0.4
+prompt-toolkit==3.0.13
 protobuf==3.11.3
 ptyprocess==0.6.0
 pyasn1==0.4.8
