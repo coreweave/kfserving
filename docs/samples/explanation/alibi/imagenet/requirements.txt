@@ -1,5 +1,12 @@
 alibi>=0.1.2
-numpy>=1.8.2
-tensorflow>=1.13.1
+numpy>=1.22.2
+tensorflow>=2.12.0rc1
 joblib>=0.13.0
 dill>=0.2.7.1
+keras>=2.13.1rc0 # not directly required, pinned by Snyk to avoid a vulnerability
+requests>=2.32.2 # not directly required, pinned by Snyk to avoid a vulnerability
+setuptools>=70.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=2.2.2 # not directly required, pinned by Snyk to avoid a vulnerability
+werkzeug>=3.0.3 # not directly required, pinned by Snyk to avoid a vulnerability
+wheel>=0.38.0 # not directly required, pinned by Snyk to avoid a vulnerability
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
